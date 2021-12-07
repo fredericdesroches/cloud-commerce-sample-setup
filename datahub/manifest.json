@@ -31,6 +31,8 @@
       "saporder-target",
 
       "sapidocintegration",
-      "sapidocoutboundadapter"
+      "sapidocoutboundadapter",
+    
+      "ccv2-example"
   ]
 }
