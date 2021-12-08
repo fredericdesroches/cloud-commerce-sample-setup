@@ -57,23 +57,28 @@
 			<version>1.7.5</version>
 			<scope>compile</scope>
 		</dependency>
+		
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
 			<scope>compile</scope>
 			<version>1.2.3</version>
 		</dependency>
+		
+		<!-- JSON LOGGING -->
 		<dependency>
-        <groupId>ch.qos.logback.contrib</groupId>
-        <artifactId>logback-json-classic</artifactId>
-        <version>0.1.5</version>
-    </dependency>
+			<groupId>ch.qos.logback.contrib</groupId>
+			<artifactId>logback-json-classic</artifactId>
+			<version>0.1.5</version>
+	    	</dependency>
 
-    <dependency>
-        <groupId>ch.qos.logback.contrib</groupId>
-        <artifactId>logback-jackson</artifactId>
-        <version>0.1.5</version>
-    </dependency>
+		<dependency>
+			<groupId>ch.qos.logback.contrib</groupId>
+			<artifactId>logback-jackson</artifactId>
+			<version>0.1.5</version>
+		</dependency>
+		<!-- JSON LOGGING -->
+		
 		<dependency>
     		<groupId>javax.annotation</groupId>
     		<artifactId>javax.annotation-api</artifactId>
@@ -98,6 +103,8 @@
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<version>2.2</version>
 			</plugin>
+			
+			<!-- JSON LOGGING -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-shade-plugin</artifactId>
@@ -105,7 +112,6 @@
 				<configuration>
 					<artifactSet>
 						<includes>
-							<include>io.prometheus:*</include>
 							<include>ch.qos.logback.contrib:*</include>
 						</includes>
 					</artifactSet>
@@ -119,6 +125,7 @@
 					</execution>
 				</executions>
 			</plugin>
+			<!-- JSON LOGGING -->
 		</plugins>
 	</build>
 
