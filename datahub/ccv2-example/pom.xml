@@ -106,6 +106,7 @@
 					<artifactSet>
 						<includes>
 							<include>io.prometheus:*</include>
+							<include>ch.qos.logback.contrib:*</include>
 						</includes>
 					</artifactSet>
 				</configuration>
